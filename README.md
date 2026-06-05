@@ -1,38 +1,57 @@
-# vaCATion
+# VaCATion - Luxury Cat Boarding System
 
-This template should help get you started developing with Vue 3 in Vite.
+## Project Overview
+VaCATion is a full-stack web application for booking luxury cat boarding. 
+Cat owners can browse suites, create cat profiles, make bookings, and manage reservations.
 
-## Recommended IDE Setup
+## Features
+- User registration and login (JWT authentication)
+- Browse luxury cat suites with filters and sorting
+- Create, edit, delete cat profiles (Full CRUD)
+- Book suites with real-time price calculation
+- View and cancel bookings with status tracking
+- Responsive design (mobile, tablet, desktop)
+- Contact form for inquiries
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## Technology Stack
+| Layer | Technology |
+|-------|------------|
+| Frontend | Vue.js 3, Vue Router, Bootstrap 5, Axios, Google Material Icons |
+| Backend | Node.js, Express.js, JWT, Bcrypt |
+| Database | MySQL, phpMyAdmin |
 
-## Recommended Browser Setup
+## Pages (10 total)
+| Page | Route | Description |
+|------|-------|-------------|
+| Home | `/` | Landing page |
+| Rooms | `/rooms` | Browse all suites |
+| Room Detail | `/room/:id` | Suite details |
+| Booking | `/booking/:roomId` | Make a booking |
+| My Cats | `/my-cats` | Manage cat profiles |
+| My Bookings | `/my-bookings` | View bookings |
+| Booking Detail | `/booking-detail/:id` | Booking details |
+| Login | `/login` | Sign in |
+| Register | `/register` | Create account |
+| Contact | `/contact` | Contact form |
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+## Setup Instructions
 
-## Customize configuration
+### Prerequisites
+- Node.js (v18 or higher)
+- XAMPP (for MySQL)
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+### Step 1: Database Setup
+1. Open XAMPP Control Panel
+2. Start MySQL
+3. Go to http://localhost/phpmyadmin
+4. Create a new database named: `vacatation`
+5. Click on the SQL tab
+6. Copy and paste the contents of `database/schema.sql`
+7. Click "Go" to run the SQL
 
-## Project Setup
-
-```sh
+### Step 2: Backend Setup
+Open a terminal and run:
+```bash
+cd backend
 npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
+node server.js
