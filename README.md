@@ -55,3 +55,30 @@ Open a terminal and run:
 cd backend
 npm install
 node server.js
+
+The backend will run on: http://localhost:5000
+
+### Step 3: Frontend Setup
+Open a NEW terminal and run:
+npm install
+npm run dev
+
+The frontend will run on: http://localhost:5173
+
+Step 4: Access the Application
+Open your browser and go to: http://localhost:5173
+
+Login Credentials
+You can either:
+
+Register a new account, OR
+
+Use test account:
+
+Email: testava@gmail.com
+
+Password: passwordava
+
+
+
+
