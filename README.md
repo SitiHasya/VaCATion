@@ -68,3 +68,21 @@ You can either:
 - Use test account:
   - Email: testava@gmail.com
   - Password: passwordava
+ 
+- ## Project Structure
+VaCATion/
+├── backend/
+│   ├── config/db.js
+│   ├── routes/
+│   ├── server.js
+│   └── package.json
+├── frontend/
+│   ├── src/
+│   │   ├── views/
+│   │   ├── components/
+│   │   ├── App.vue
+│   │   └── main.js
+│   └── package.json
+├── database/
+│   └── schema.sql
+└── README.md
