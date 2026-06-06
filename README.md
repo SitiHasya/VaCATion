@@ -68,4 +68,7 @@ You can either:
 - Use test account:
   - Email: testava@gmail.com
   - Password: passwordava
+
+## Known Issues
+- After login/registration, you need to refresh the page (F5) for the navigation bar to update. This is a known limitation and will be fixed in a future update.
  
